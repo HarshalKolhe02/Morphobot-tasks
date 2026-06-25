@@ -31,9 +31,9 @@
 
 | Gain | Description | Value |
 |--------|----------------|---------|
-| Kp | Proportional Gain | 8 |
-| Ki | Integral Gain | 30 |
-| Kd | Derivative Gain | 0.005 |
+| Kp | Proportional Gain | 0.37  |
+| Ki | Integral Gain | 1   |
+| Kd | Derivative Gain | 0.056  |
 
 
 ## Results

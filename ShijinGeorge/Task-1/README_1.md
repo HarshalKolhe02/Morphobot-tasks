@@ -72,10 +72,10 @@ This reduces oscillations and improves stability.
 The PID controller output is calculated as:
 u= Kp * P + Ki * I + Kd * D
 
-where:
-* Kp = 5
-* Ki = 19
-* Kd = 0.01
+where optimal solution after tuning is:
+* Kp = 0.48
+* Ki = 0.98
+* Kd = 0.091
 
 I did many trial and errors and ended up in these values which only produces less overshoot and steady state error
 
@@ -113,20 +113,18 @@ Initially I didn't use this,but that time instead saturating at 24 ;temp was inc
 | -------------------------- | -------- |
 | Desired Temperature        | 24 C     |
 | Initial Temperature        | 35 C     |
-| Proportional Gain (Kp)     | 5        |
-| Integral Gain (Ki)         | 19       |
-| Derivative Gain (Kd)       | 0.01     |
+| Proportional Gain (Kp)     | 0.48     |
+| Integral Gain (Ki)         | 0.98     |
+| Derivative Gain (Kd)       | 0.091    |
 | Simulation Duration        | 500s     |
 | Time Step (dt)             | 0.1s     |
-| Final Achieved Temperature | 24.02 C  |
-| Final Error                | -0.02 C  |
-| Maximum Cooling Rate       | 419.58   |
+| Maximum Cooling Rate       | 419.80   |
 
 ---
 
 ## Temperature Profile
 
-The temperature profile shows the room temperature decreasing from the initial value of 35 °C and approaching the desired setpoint of 24 deg C.
+The temperature profile shows the room temperature decreasing from the initial value of 35 deg C and approaching the desired setpoint of 24 deg C.
 After achieving a temp of 24 deg C, eventhough the surrounding temp is being increasing constantly gets balanced by the constant cooling rate after saturation near to 24 deg C.
 
 ---

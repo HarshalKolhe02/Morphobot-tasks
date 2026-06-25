@@ -22,14 +22,14 @@ Target altitude (setpoint):**10 m**
 | ------------------------ | ------- |
 | Setpoint Altitude        | 10 m    |
 | Initial Altitude         | 2 m     |
-| Proportional Gain (Kp)   | 4       |
-| Integral Gain (Ki)       | 15      |
-| Derivative Gain (Kd)     | 0.005   |
+| Proportional Gain (Kp)   | 1.37    |
+| Integral Gain (Ki)       | 7.17    |
+| Derivative Gain (Kd)     | 0.485   |
 | Simulation Time          | 200 s   |
 | Time Step (dt)           | 0.1 s   |
 | Achieved Height          | 10.00 m |
 | Final Error              | 0.00 m  |
-| Maximum Throttle Command | 279.85  |
+| Maximum Throttle Command | 279.69  |
 
 Created arrays for storing values of altitude,throttle and error values for plotting and comparing values
 
