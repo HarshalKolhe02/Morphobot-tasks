@@ -1,0 +1,3 @@
+Proportional gain K_p affects the peak of initial oscillations, and how fast we start reducing error but too high values can cause excessive overshoot.
+Integral gain K_i works on steady state error removal, too high value causes sudden increase in system variables which even though on code seems fine should be avoided in practical conditions beacuse there is certainly a chance for over shoot. If the value is too small steady state error will take longer to be removed. In this case the altitude will climb fast but steady state error which occurs close to desired value will take forever to be finally solved
+Derivative term helps prevent overshoot for ex if K_p is too high.Too high K_d value causes lot of oscillations. Didnt encounter any other problems related to K_d.
